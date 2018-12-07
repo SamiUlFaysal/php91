@@ -1,3 +1,5 @@
+<?php
+
 #Array Based On Index:-
 #Numarical Array:
 $sg = array('0','1','sami','3');
@@ -51,3 +53,4 @@ foreach ($deshv as $k=>$value) {
     echo "$k=$value";
 }
 #.....................
+?>
