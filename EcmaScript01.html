@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <script>
+        document.write("Hello World");
+        a = "amerika";
+        document.write("Hello <br>" + a);
+
+        function test(a, b, c) {
+            document.write(a + b + c);
+        }
+
+        test(5, 7, 9);
+        const b = "Dhaka";
+        document.write("<br>" + b);
+        c = 30;
+        if (c == 20) {
+            document.write("<br>Its Ten");
+
+        } else if (c == 20) {
+            document.write("<br>Its Not Ten");
+        } else if (c == 30) {
+            document.write("Its Thirty");
+        } else if (c == 40) {
+            document.write(" Its Fourty ");
+        } else {
+            document.write("Its Nothing");
+        }
+        for (i = 0; i <= 20; i = i + 2) {
+            document.write(i + "<br>");
+        }
+        var i = 0;
+        while (i <= 10) {
+            document.write("The Number is" + i + "<br>");
+            i++;
+        }
+        var v = 0;
+        do {
+            document.write("Its all about" + i);
+            v++
+        } while (v <= 10);
+        c = 10
+        switch (c) {
+            case 10:
+                document.write("Its" + c);
+                break;
+            case 20:
+                document.write("Its" + i);
+                break;
+            case 30:
+                document.write("Its" + i);
+                break;
+
+            default:
+                document.write("Its" + c);
+                break;
+        }
+        // function ss() {
+        //     confirm("Are You Man"); 
+        // }
+        /*function ddd() {
+            res=confirm("Are U MAn ?");
+            if (res) {
+                document.write("Your Press Ok")
+            }else{
+                document.write("You Press Cancel");
+            }
+        }*/
+        function sx() {
+            person = prompt("Write Your Name", "Masud");
+            if (person == null || person == "") {
+                document.write("Form Canceled");
+            } else {
+                document.write("Welcome To" + person + "!")
+            }
+        }
+    </script>
+    <!-- <button onclick="ss()" >Click Me </button> -->
+    <button onclick="sx()">Click Me </button>
+</body>
+
+</html>
